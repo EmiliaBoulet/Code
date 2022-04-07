@@ -1,0 +1,11 @@
+{
+  "name": "apres--midi",
+  "version": "0.0.1",
+  "description": "entraînement a npm",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Emiii",
+  "license": "ISC"
+}

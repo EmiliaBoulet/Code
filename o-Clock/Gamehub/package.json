@@ -1,0 +1,26 @@
+{
+  "name": "s03e06-atelier-duo-gamehub-kenshirosan",
+  "version": "1.0.0",
+  "description": "Commençons par initialiser le projet pour pouvoir y installer des dépendances.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-dev --notify=false index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-clock-Cassini/S03E06-atelier-duo-GameHub-Kenshirosan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-clock-Cassini/S03E06-atelier-duo-GameHub-Kenshirosan/issues"
+  },
+  "homepage": "https://github.com/O-clock-Cassini/S03E06-atelier-duo-GameHub-Kenshirosan#readme",
+  "dependencies": {
+    "dayjs": "^1.11.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "node-dev": "^7.4.2"
+  }
+}

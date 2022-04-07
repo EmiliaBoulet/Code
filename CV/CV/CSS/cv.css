@@ -1,0 +1,289 @@
+body
+{
+    --second-color: rgb(27, 33, 97);
+    font-family: Helvetica, Arial, sans-serif;
+     --background-color: #F4EFDE
+}
+.page
+{
+display: flex;
+height: 95vh;
+width: 199vh;
+    background-color: var(--background-color);
+    color:var(--second-color);
+    font-weight: bold;
+}
+.page__header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+width: 50%;
+}
+.page__main
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+.title__little
+{
+    border-bottom: 2px solid var(--second-color);
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 2vh;
+
+}
+/**************************HEADER************************************/
+
+/***************TOP*****************/
+.header__top
+{
+display: flex;
+height: 20%;
+
+}
+
+.header__down
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+}
+.top__logo
+{
+    width: 50%;
+    display: flex;
+    border: 10px solid var(--second-color);
+    border-right: 5px solid var(--second-color);
+    padding: 1vh;
+    box-sizing: border-box;
+}
+
+
+.top__infos
+{
+    width: 50%;
+    border: 10px solid var(--second-color);
+    border-left: 5px solid var(--second-color);
+    padding: 1vh;
+    box-sizing: border-box;
+
+}
+
+.top__logo-emiii
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2vh;
+}
+
+
+.top__logo-emilia
+{
+    max-width: 25%;
+}
+
+.top__infos-list
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1em;
+    gap: 0.5vh;
+}
+.top__infos-icone
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infos__family
+{
+    max-width: 25%;
+}
+/***************DOWN*****************/
+.down__photos
+{
+    display: flex;
+    justify-content: center;
+    border: 10px solid var(--second-color);
+    border-bottom: 5px solid var(--second-color);
+    border-top: 0px solid var(--second-color);
+
+    padding: 1vh;
+
+}
+
+.down__photos-1
+{
+    max-width: 40%;
+    
+}
+
+.down__footer
+{
+  
+  font-size: 1.9vh;
+  
+}
+
+.down__footer-legend
+{
+      border: 10px solid var(--second-color);
+    border-top: 5px solid var(--second-color);
+    padding: 1.5vh 40vh;
+    
+}
+
+/**************************MAIN************************************/
+
+.page__main
+{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main__top
+{
+height: 50%;
+display: flex;
+flex-direction: column;
+align-content: flex-start;
+border: 10px solid var(--second-color);
+border-left: 5px solid;
+box-sizing: border-box;
+
+}
+.main__down
+{
+height: 50%;
+border: 10px solid var(--second-color);
+border-top: 5px solid;
+border-left: 5px solid;
+width: 100%;
+}
+/***************TOP*****************/
+
+.top__experience
+{
+    display: flex;
+    height: 100%;
+   
+   
+}
+.experience__title
+{
+    font-style: italic;
+    font-size: 2em;
+}
+.experience__article-1
+{
+   display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+}
+
+.experience__content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+   height: 100%;
+   
+}
+
+.experience__text
+{
+    font-size: 1.2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+padding: 2vh;
+height: max-content;
+    
+}
+
+.experience__text-list
+{
+display: flex;
+}
+/***************DOWN*****************/
+.down__articles
+{
+    display: flex;
+    height: 100%;
+
+}
+.down__article-left
+{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+}
+.down__article-right
+{
+display: flex;
+flex-direction: column;
+width: 50%;
+height: 100%;
+}
+.down__formation
+{
+
+}
+.down__school
+{
+    height: 50%;
+    
+}
+.down__contact
+{
+display: flex;
+flex-wrap: wrap;
+height: 50%;
+
+}
+
+.contact__list
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact__list-mail
+{
+    height: 50%;
+    width: 50%;
+}
+.contact__list-phone
+{
+height: 50%;
+    width: 50%;
+}
+
+.contact__list-insta
+{
+    height: 50%;
+    width: 50%;
+}
+
+.contact__list-pinterest
+{
+    height: 50%;
+    width: 50%;
+}
+
+.mail__logo
+{
+    width: 20%;
+    
+}
