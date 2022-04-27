@@ -196,7 +196,7 @@ width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-   height: 100%;
+    height: 100%;
    
 }
 
@@ -206,14 +206,14 @@ width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
-padding: 2vh;
-height: max-content;
+    padding: 2vh;
+    height: max-content;
     
 }
 
 .experience__text-list
 {
-display: flex;
+    display: flex;
 }
 /***************DOWN*****************/
 .down__articles
@@ -231,59 +231,149 @@ display: flex;
 }
 .down__article-right
 {
-display: flex;
-flex-direction: column;
-width: 50%;
-height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
 }
+
 .down__formation
 {
-
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-top: 5px;
+    border-left: 5px;
+    border-right: 10px;
+    border-bottom: 10px;
+    border: solid var(--second-color);
 }
+
+.down__formation-list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+
 .down__school
 {
     height: 50%;
+    border-top: 10px;
+    border-left: 5px;
+    border-right: 5px;
+    border-bottom: 10px;
+    border: solid var(--second-color);
+
     
 }
 .down__contact
 {
-display: flex;
-flex-wrap: wrap;
-height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50%;
+    width: 100%;
+    border-top: 5px;
+    border-left: 5px;
+    border-right: 5px;
+    border-bottom: 5px;
+    border: solid var(--second-color);
 
 }
 
 .contact__list
 {
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
+    
 }
 
 .contact__list-mail
 {
     height: 50%;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-top: 5px;
+    border-left: 5px;
+    border-right: 10px;
+    border-bottom: 10px;
+    border: solid var(--second-color);
 }
-.contact__list-phone
+.contact__list-linkedin
 {
-height: 50%;
+    height: 50%;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-top: 5px;
+    border-left: 5px;
+    border-right: 5px;
+    border-bottom: 10px;
+    border: solid var(--second-color);
 }
 
 .contact__list-insta
 {
     height: 50%;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-top: 5px;
+    border-left: 5px;
+    border-right: 10px;
+    border-bottom: 5px;
+    border: solid var(--second-color);
 }
 
-.contact__list-pinterest
+.contact__list-github
 {
     height: 50%;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-top: 5px;
+    border-left: 5px;
+    border-right: 5px;
+    border-bottom: 5px;
+    border: solid var(--second-color);
 }
 
-.mail__logo
+.logo__mail
 {
-    width: 20%;
+    width: 30%;
+    height: 55%;
+    
+}
+
+.logo__linkedin
+{
+    width: 25%;
+    height: 60%;
+    
+}
+
+.logo__instagram
+{
+    width: 25%;
+    height: 60%;
+    
+    
+}
+.logo__github
+{
+    width: 25%;
+    height: 60%;
     
 }
