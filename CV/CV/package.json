@@ -1,6 +1,18 @@
 {
   "dependencies": {
     "dotenv": "^16.0.0",
-    "ejs": "^3.1.7"
-  }
+    "ejs": "^3.1.7",
+    "express": "^4.18.0",
+    "node-dev": "^7.4.3"
+  },
+  "name": "cv",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-dev index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
