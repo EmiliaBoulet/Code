@@ -1,0 +1,33 @@
+<%- include('partials/header') %>
+
+  
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <hr>
+    <h2 class="h1 display-4"><%= quizInfos.title %></h2>
+    <p class="lead">Voici une liste des différents sujets présent sur ce quiz :</p>
+    <p class="lead"> <%for (const elem of quizInfos.tags) { %>            
+      
+         <a class="btn btn-block btn-lg tag tag--<%= elem.name.toLowerCase() %>" href="#">
+             <%= elem.name %>
+         </a>
+        <% }%></p>
+        <hr>
+  </div>
+  
+  <div class="row card-header shadow-sm">
+  
+    <% for (let elem of quizInfos.questions) { %>
+      <div class="col-4 p-5 text-center shadow-sm ">
+          <a class="btn btn-block btn-lg tag tag--<%= elem.level.name.toLowerCase() %>">
+              <%= elem.level.name %>
+            </a>
+
+        <h6 class="h6 card-title pricing-card-title"><%= elem.question %></h6>
+        <a class="btn btn-lg btn-block btn-primary text-white" href="#">Commencer</a>
+    </div>
+    <% } %>
+    
+  </div>
+
+
+<%- include('partials/footer') %>

@@ -1,0 +1,63 @@
+<%- include('partials/header') %>
+<main class="container">
+
+   
+
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h2 class="h1 display-4"><%= quizInfos.title %></h2>
+        <p class="lead"><%= quizInfos.description %></p>
+        <p class="font-weight-bold">par <%= quizInfos.user.firstname %> <%= quizInfos.user.lastname %></p>
+        <p class="lead"><%= quizInfos.questions[0].question.id %></p>
+    </div>
+
+    <div class="row">
+
+
+        <%for (const elem of quizInfos.tags) { %>
+
+        <div class="col-3 p-4 text-center">
+            <a class="btn btn-block btn-lg tag tag--<%= elem.name.toLowerCase() %>" href="/quizzes/tag/<%= elem.id %>">
+                <%= elem.name %>
+            </a>
+        </div>
+
+        <% } %>
+
+
+    </div>
+    <div class="row">
+
+
+        <% for (let question of quizInfos.questions) { %>
+
+        <div class="col-12">
+            <label
+                class="badge level level--<%= question.level.name.toLowerCase() %>"><%= question.level.name %></label>
+            <h4>
+                <%= question.question %>
+            </h4>
+            <ol>
+                <% for (let answer of question.answers) { %>
+                <li><%= answer.description %></li>
+                <% } %>
+            </ol>
+        </div>
+
+
+        <% } %>
+
+
+    </div>
+
+
+</main>
+<footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+        <div class="col-12 col-md text-center">
+            <small class="d-block mb-3 text-muted">O'clock © 2017-2020</small>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<%- include('partials/header') %>
+
+
+<% if(quizzesAll.length !== 0){ %>
+
+    
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <hr><h2></h2>
+    <h2 class="h1 display-4 btn btn-block btn-lg tag tag--<%= quizzesAll[0].tags[0].name.toLowerCase() %>">
+        <%= quizzesAll[0].tags[0].name %></h2>
+    <p class="lead">Voici une liste des différents quizzes présent sur ce sujet :</p>
+    <hr>
+    <div class="row card-header shadow-sm">
+
+        <% for (let quiz of quizzesAll) { %>
+
+        <div class="col-4 p-5 text-center shadow-sm ">
+            <div class="card-header">
+                <h3 class="h4 my-0 font-weight-normal"><%= quiz.title%></h3>
+                <h6 class="h6 my-0 font-weight-normal"><%= quiz.description%></h6>
+                <a href="/quiz/<%= quiz.id %>" class="btn btn-lg btn-block btn-primary text-white">Jouer</a>
+            </div>
+        </div>
+        <% } %>
+
+    </div>
+
+</div>
+
+<% } %>
+
+
+
+<%- include('partials/footer') %>
